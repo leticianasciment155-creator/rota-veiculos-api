@@ -1,5 +1,5 @@
-import veiculoRouter from "./routes/veiculos.routes.js";
 import express from "express";
+import veiculoRouter from "./routes/veiculos.routes.js";
 
 const app = express()
 const port = 3000

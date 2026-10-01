@@ -4,9 +4,9 @@ import { veiculoService } from "../services/veiculos.services.js"
 const veiculoRouter = Router();
 export default veiculoRouter
 
-veiculoRouter.get ( "/", async (res) => {
+veiculoRouter.get ( "/", async (req, res) => {
     const veiculos = await veiculoService.getAll();
-        return res.json(veiculos)
+    res.json(veiculos)
 });
 
 veiculoRouter.post("/", async (req, res) => {
